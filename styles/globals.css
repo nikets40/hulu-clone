@@ -7,3 +7,9 @@
         @apply bg-[#06202A] text-gray-300
     }
 }
+
+@layer components {
+    .category-button{
+        @apply cursor-pointer hover:scale-125 hover:text-white duration-100 active:text-red-500 
+    }
+}

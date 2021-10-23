@@ -5,16 +5,21 @@ function Categories({ categories }) {
   return (
     <nav className="relative mt-5 ">
       <div className=" flex px-10 sm:px-20 text-2xl whitespace-nowrap space-x-10 sm:space-x-20 overflow-x-scroll scrollbar-hide">
+        
+      <p 
+      onClick={()=>router.push("/")}
+      className="category-button">
+          Trending
+        </p>
+        
         {categories.map((genre) => (
-          <div
-            onClick={()=>router.push(`/?genreId=${genre.id}`)}
+          <p
+            onClick={() => router.push(`/?genreId=${genre.id}`)}
             key={genre.id}
-            className="last:pr-24"
+            className="category-button last:pr-20"
           >
-            <p className="cursor-pointer hover:scale-125 hover:text-white duration-100 active:text-red-500 ">
-              {genre.name}
-            </p>
-          </div>
+            {genre.name}
+          </p>
         ))}
       </div>
       <div className="absolute top-0 right-0 bg-gradient-to-l from-[#06202A] h-10 w-1/12" />
