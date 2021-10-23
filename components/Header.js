@@ -22,6 +22,7 @@ function Header() {
         <HeaderItem title="Account" Icon={UserIcon} />
       </div>
       <Image
+        alt="logo"
         className="object-contain"
         src={process.env.baseMediaUrl + "ua6"}
         width={200}
