@@ -9,10 +9,10 @@ import {
   UserIcon,
 } from "@heroicons/react/outline";
 
+
 function Header() {
-  console.log(process.env.baseMediaUrl + "ua6");
   return (
-    <header className="flex flex-col items-center sm:flex-row sm:justify-between">
+    <header className="flex flex-col items-center sm:flex-row sm:justify-between sm:px-10">
       <div className="flex flex-grow justify-evenly max-w-2xl mt-6">
         <HeaderItem title="Home" Icon={HomeIcon} />
         <HeaderItem title="Trending" Icon={LightningBoltIcon} />
