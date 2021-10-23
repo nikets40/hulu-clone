@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Header from '../components/Header'
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
         <meta name="description" content="This is a simple front end clone of hulu using react.js and next.js" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        This a hulu clone
+       <Header/>
     </div>
   )
 }
